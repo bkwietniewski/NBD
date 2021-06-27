@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="441ff065-7b19-49a6-9eb6-149cabe50cb2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Worksheet" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1qo489ebbRNvY3BjlOoic8gJ90y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration name="First" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="First" />
+      <module name="zad1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.First" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="zad1" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="zad1 [file:/E:/studia/studia%20magisterskie/sem2/nbd/cwiczenia/cw1/zadanie/zad1/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="zad1-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="3235464893972" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="1571008662" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="2513440544" />
+      </map>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="441ff065-7b19-49a6-9eb6-149cabe50cb2" name="Default Changelist" comment="" />
+      <created>1617732446954</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617732446954</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="210" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1617993014750">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="210" y="276" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040/-1080.-465.1080.1880@0.0.1920.1040" timestamp="1617993014750" />
+    <state x="235" y="224" key="#xdebugger.evaluate" timestamp="1617735348959">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="235" y="224" key="#xdebugger.evaluate/0.0.1920.1040/-1080.-465.1080.1880@0.0.1920.1040" timestamp="1617735348959" />
+    <state width="831" height="295" key="GridCell.Tab.0.bottom" timestamp="1623102764081">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="831" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.-465.1080.1880@0.0.1920.1040" timestamp="1623102764081" />
+    <state width="831" height="295" key="GridCell.Tab.0.center" timestamp="1623102764081">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="831" height="295" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.-465.1080.1880@0.0.1920.1040" timestamp="1623102764081" />
+    <state width="831" height="295" key="GridCell.Tab.0.left" timestamp="1623102764081">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="831" height="295" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.-465.1080.1880@0.0.1920.1040" timestamp="1623102764081" />
+    <state width="831" height="295" key="GridCell.Tab.0.right" timestamp="1623102764081">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="831" height="295" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.-465.1080.1880@0.0.1920.1040" timestamp="1623102764081" />
+    <state width="916" height="351" key="GridCell.Tab.1.bottom" timestamp="1617739666774">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="916" height="351" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1080.-465.1080.1880@0.0.1920.1040" timestamp="1617739666774" />
+    <state width="916" height="351" key="GridCell.Tab.1.center" timestamp="1617739666774">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="916" height="351" key="GridCell.Tab.1.center/0.0.1920.1040/-1080.-465.1080.1880@0.0.1920.1040" timestamp="1617739666774" />
+    <state width="916" height="351" key="GridCell.Tab.1.left" timestamp="1617739666774">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="916" height="351" key="GridCell.Tab.1.left/0.0.1920.1040/-1080.-465.1080.1880@0.0.1920.1040" timestamp="1617739666774" />
+    <state width="916" height="351" key="GridCell.Tab.1.right" timestamp="1617739666774">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="916" height="351" key="GridCell.Tab.1.right/0.0.1920.1040/-1080.-465.1080.1880@0.0.1920.1040" timestamp="1617739666774" />
+    <state x="0" y="95" key="SettingsEditor" timestamp="1617734354499">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="95" key="SettingsEditor/0.0.1920.1040/-1080.-465.1080.1880@0.0.1920.1040" timestamp="1617734354499" />
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1623102772952">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1080.-465.1080.1880@0.0.1920.1040" timestamp="1623102772952" />
+    <state x="342" y="245" key="new project wizard" timestamp="1617732493527">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="245" key="new project wizard/0.0.1920.1040/-1080.-465.1080.1880@0.0.1920.1040" timestamp="1617732493527" />
+  </component>
+</project>

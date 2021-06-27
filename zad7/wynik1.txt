@@ -1,0 +1,58 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    86    0     0  100    86      0   8600 --:--:-- --:--:-- --:--:--  9555
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sat, 26 Jun 2021 19:28:46 GMT
+Content-Type: application/json
+Content-Length: 0
+
+
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    88    0     0  100    88      0   2378 --:--:-- --:--:-- --:--:--  2514
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sat, 26 Jun 2021 19:34:17 GMT
+Content-Type: application/json
+Content-Length: 0
+
+
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    90    0     0  100    90      0   3103 --:--:-- --:--:-- --:--:--  3214
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sat, 26 Jun 2021 19:34:37 GMT
+Content-Type: application/json
+Content-Length: 0
+
+
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    87    0     0  100    87      0   2900 --:--:-- --:--:-- --:--:--  2900
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sat, 26 Jun 2021 19:34:57 GMT
+Content-Type: application/json
+Content-Length: 0
+
+
+
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    85    0     0  100    85      0   2428 --:--:-- --:--:-- --:--:--  2500
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sat, 26 Jun 2021 19:35:15 GMT
+Content-Type: application/json
+Content-Length: 0

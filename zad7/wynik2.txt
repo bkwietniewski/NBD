@@ -1,0 +1,15 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    86  100    86    0     0   9555      0 --:--:-- --:--:-- --:--:-- 10750
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvveOa09mYFAXzGBKZM5jZXj32/sWXxYA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s22360>; rel="up"
+Last-Modified: Sat, 26 Jun 2021 19:28:46 GMT
+ETag: "36GdqXISx5DqTTo5pQB1av"
+Date: Sat, 26 Jun 2021 19:40:26 GMT
+Content-Type: application/json
+Content-Length: 86
+
+{"brand": "Opel", "model": "Corsa", "year_of_production": 2010, "is_available": false}

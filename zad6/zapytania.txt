@@ -1,0 +1,73 @@
+Część 1 – Wycieczki górskie
+
+1.Znajdź trasy którymi można dostać się z Darjeeling na Sandakphu, mające najmniejszą ilość etapów 
+MATCH path = ShortestPath(({name:"Darjeeling"})-[*..5]->({name:"Sandakphu"}))
+RETURN path
+
+2.Znajdź mające najmniej etapów trasy którymi można dostać się z Darjeeling na Sandakphu i które mogą być wykorzystywane zimą 
+MATCH path = allShortestPaths(({name:"Darjeeling"})-[*..10]->({name:"Sandakphu"}))
+WHERE all(r IN relationships(path) WHERE r.winter="true")
+RETURN path
+
+3.Uszereguj trasy którymi można dostać się z Darjeeling na Sandakphu według dystansu
+MATCH path = ({name:"Darjeeling"})-[*]->({name:"Sandakphu"})
+WITH path, REDUCE(dist = 0, r IN RELATIONSHIPS(path) | dist + r.distance) AS path_distance
+RETURN path,path_distance
+ORDER BY path_distance ASC
+
+
+
+Część 2 – Połączenia lotnicze
+
+4.Uszereguj porty lotnicze według ilości rozpoczynających się w nich lotów
+MATCH (a:Airport)<-[r:ORIGIN]-(f:Flight)
+RETURN a,count(f) as amountFlights
+ORDER BY amountFlights
+
+5.Znajdź wszystkie porty lotnicze, do których da się dolecieć (bezpośrednio lub z przesiadkami) z Los Angeles (LAX) wydając mniej niż 3000 
+// stworzenie 3 relacji bezpośrednio między portami lotniczymi dla każdego lotu (dla każdego biletu oddzielna)
+MATCH (orig)<-[:ORIGIN]-(f:Flight)-[:DESTINATION]->(dest:Airport)
+MATCH (t:Ticket)-[]->(f)
+MERGE (orig)-[:FLIGHT{price:t.price,airlane:f.airline,date:f.date,class:t.class}]->(dest)
+
+MATCH path = (:Airport{name:"LAX"})-[:FLIGHT*..5]->(:Airport)
+WITH path, REDUCE(price=0, r in relationships(path) | price + r.price) as total_price
+WHERE total_price < 3000
+RETURN DISTINCT(LAST(NODES(path)))
+
+6.Uszereguj połączenia, którymi można dotrzeć z Los Angeles (LAX) do Dayton (DAY) według ceny biletów
+// z pomocą relacji utworzonych w zadaniu 5
+// brak takich połączeń, więc nie załączam svg i json
+MATCH path = (:Airport{name:"LAX"})-[:FLIGHT*..5]->(:Airport{name: "DAY"})
+WITH path, REDUCE(price=0, r in relationships(path) | price + r.price) as total_price
+RETURN path
+ORDER BY total_price
+
+7.Znajdź najtańsze połączenie z Los Angeles (LAX) do Dayton (DAY) 
+// z pomocą relacji utworzonych w zadaniu 5
+// brak takich połączeń, więc nie załączam svg i json
+MATCH path = (:Airport{name:"LAX"})-[:FLIGHT*..5]->(:Airport{name: "DAY"})
+WITH path, REDUCE(price=0, r in relationships(path) | price + r.price) as total_price
+RETURN path
+ORDER BY total_price LIMIT 1
+
+8.Znajdź najtańsze połączenie z Los Angeles (LAX) do Dayton (DAY) w klasie biznes
+// z pomocą relacji utworzonych w zadaniu 5
+// brak takich połączeń, więc nie załączam svg i json 
+MATCH path = (:Airport{name:"LAX"})-[:FLIGHT*..5{class:"business"}]->(:Airport{name: "DAY"})
+WITH path, REDUCE(price=0, r in relationships(path) | price + r.price) as total_price
+RETURN path
+ORDER BY total_price LIMIT 1
+
+9.Uszereguj linie lotnicze według ilości miast, pomiędzy którymi oferują połączenia (unikalnych miast biorących udział w relacjach :ORIGIN i :DESTINATION węzłów typu Flight obsługiwanych przez daną linię) 
+MATCH (f:Flight)-[:DESTINATION|ORIGIN]->(a:Airport)
+RETURN f.airline, count(distinct(a)) AS amount
+ORDER BY amount DESC
+
+10.Znajdź najtańszą trasę łączącą 3 różne porty lotnicze
+// z pomocą relacji utworzonych w zadaniu 5
+MATCH path = (a:Airport)-[:FLIGHT]->(b:Airport)-[:FLIGHT]->(c:Airport)
+WHERE not(a.name=c.name) AND not(a.name=b.name) AND not(b.name=c.name)
+WITH path, REDUCE(price=0, r in relationships(path) | price + r.price) as total_price
+RETURN path
+ORDER BY total_price LIMIT 1

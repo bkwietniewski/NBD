@@ -1,0 +1,33 @@
+1.Umieść w bazie (nazwa bucketa ma być Twoim numerem indeksu poprzedzonym literą „s”) 5 wartości, gdzie każda z nich ma być dokumentem json mającym 4 pola co najmniej dwóch różnych typów. 
+curl -i -XPUT -H "Content-Type: application/json" -d '{"brand": "Opel", "model": "Corsa", "year_of_production": 2010, "is_available": false}' http://localhost:8098/buckets/s22360/keys/corsa
+curl -i -XPUT -H "Content-Type: application/json" -d '{"brand": "Skoda", "model": "Octavia", "year_of_production": 2015, "is_available": true}' http://localhost:8098/buckets/s22360/keys/octavia
+curl -i -XPUT -H "Content-Type: application/json" -d '{"brand": "Renault", "model": "Megane", "year_of_production": 1999, "is_available": false}' http://localhost:8098/buckets/s22360/keys/megane
+curl -i -XPUT -H "Content-Type: application/json" -d '{"brand": "FSO", "model": "Polonez", "year_of_production": 1990, "is_available": false}' http://localhost:8098/buckets/s22360/keys/polonez
+curl -i -XPUT -H "Content-Type: application/json" -d '{"brand": "Fiat", "model": "Panda", "year_of_production": 2012, "is_available": true}' http://localhost:8098/buckets/s22360/keys/panda
+
+2.Pobierz z bazy jedną z dodanych przez Ciebie wartości. 
+curl -i http://localhost:8098/buckets/s22360/keys/corsa
+
+3.Zmodyfikuj jedną z wartości – dodając dodatkowe pole do dokumentu. 
+curl -i -XPUT -H "Content-Type: application/json" -d '{"brand": "Opel", "model": "Corsa", "year_of_production": 2010, "is_available": false, "fuel_type": "diesel"}' http://localhost:8098/buckets/s22360/keys/corsa
+
+4.Zmodyfikuj jedną z wartości – usuwając jedną pole z wybranego dokumentu. 
+curl -i -XPUT -H "Content-Type: application/json" -d '{"brand": "Skoda", "model": "Octavia", "year_of_production": 2015}' http://localhost:8098/buckets/s22360/keys/octavia
+
+5.Zmodyfikuj jedną z wartości – zmieniając wartość jednego z pól.  
+curl -i -XPUT -H "Content-Type: application/json" -d '{"brand": "Renault", "model": "Megane", "year_of_production": 2021, "is_available": false}' http://localhost:8098/buckets/s22360/keys/megane
+
+6.Usuń jeden z dokumentów z bazy. 
+curl -i -XDELETE http://localhost:8098/buckets/s22360/keys/polonez
+
+7.Spróbuj pobrać z bazy wartość, która nie istnieje w tej bazie. 
+curl -i http://localhost:8098/buckets/s22360/keys/polonez
+
+8.Dodaj do bazy 1 dokument json (zawierający 1 pole), ale nie specyfikuj klucza. 
+curl -i -XPOST -H "Content-Type: application/json" -d '{"first_field": true}' http://localhost:8098/buckets/s22360/keys
+
+9.Pobierz z bazy element z zadania 8. 
+curl -i http://localhost:8098/buckets/s22360/keys/Slk2KmL63AiEtnLmtoQeWhIMqkH
+
+10.Usuń z bazy element z zadania 8. 
+curl -i -XDELETE http://localhost:8098/buckets/s22360/keys/Slk2KmL63AiEtnLmtoQeWhIMqkH
