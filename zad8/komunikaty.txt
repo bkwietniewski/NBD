@@ -1,0 +1,5 @@
+Pojazd o kluczu 'corsa' dodany do kubełka s22360
+Pobranie pojazdu o kluczu 'corsa' z kubełka, rezultat: Vehicle{brand='Opel', model='Corsa', dateOfProduction=1990, isAvailable=true}
+Modyfikacja isAvailable na wartość 'false'
+Pobranie pojazdu po modyfikacji o kluczu 'corsa' z kubełka, rezultat: Vehicle{brand='Opel', model='Corsa', dateOfProduction=1990, isAvailable=false}
+Pobranie pojazdu po usunięciu o kluczu 'corsa' z kubełka, rezultat: null
